@@ -1,38 +1,34 @@
-# CAPTCHA Solver Application
+# Dark-themed CAPTCHA Solver
 
-This project provides a simple web-based CAPTCHA solver application. It features a dark theme, a circular 'Verify' button with hover animations, and basic client-side verification logic.
+This project provides a simple, single-page web application for demonstrating a CAPTCHA verification process with a dark aesthetic. It features a customizable CAPTCHA image display, user input field, and a dynamic "Verify" button that provides instant feedback on the verification attempt.
 
 ## Features
 
--   **Dark Theme:** A modern, eye-friendly dark user interface.
--   **Responsive Design:** Optimized for various screen sizes using Tailwind CSS.
--   **CAPTCHA Verification:** Basic client-side logic to verify user input against a predefined CAPTCHA string.
--   **Interactive Button:** A circular 'Verify' button with a subtle hover animation and cursor feedback.
+*   **Dark Theme:** A modern, eye-pleasing dark interface.
+*   **CAPTCHA Display:** Presents a static CAPTCHA image for user recognition.
+*   **User Input:** An input field for users to type in the CAPTCHA text.
+*   **Interactive Verify Button:** A circular "Verify" button with a subtle hover animation.
+*   **Instant Feedback:** Displays a clear success or failure message after verification.
+*   **Responsive Design:** Adapts gracefully to different screen sizes.
 
-## Getting Started
+## How to Run/Test
 
-To run this application locally, follow these steps:
+To get this CAPTCHA solver running on your local machine, follow these simple steps:
 
 1.  **Save the files:**
-    -   Save the `index.html` content into a file named `index.html`.
-    -   Ensure the `image.png` file (the CAPTCHA image) is in the same directory as `index.html`.
-
+    *   Save the provided `index.html` content into a file named `index.html`.
+    *   Ensure the CAPTCHA image is available. The application expects an image file named `image.png` (which refers to the `captcha-sample.png` you provided) in the same directory as `index.html`.
 2.  **Open in Browser:**
-    -   Simply open the `index.html` file in your web browser. Most browsers will allow you to do this by double-clicking the file.
+    *   Simply open the `index.html` file in your preferred web browser.
 
-## Usage
-
-1.  The CAPTCHA image will be displayed on the page.
-2.  Enter the text you see in the CAPTCHA image into the provided input field.
-3.  Click the circular 'GO' button or press `Enter` to verify your input.
-4.  A message will appear indicating whether the verification was successful or failed.
+That's it! The application is entirely client-side, so no server setup or build process is required.
 
 ## Technologies Used
 
--   **HTML5:** For the page structure.
--   **Tailwind CSS:** For styling and responsive design.
--   **JavaScript:** For client-side CAPTCHA verification logic.
+*   **HTML5:** For the page structure.
+*   **Tailwind CSS (CDN):** For utility-first styling and responsive design.
+*   **JavaScript:** For client-side CAPTCHA verification logic.
 
-## License
+## CAPTCHA Value
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For demonstration purposes, the correct CAPTCHA text is hardcoded within the `index.html` JavaScript. Based on the `image.png`, the correct value is `V4XBG`. The verification is case-insensitive.
